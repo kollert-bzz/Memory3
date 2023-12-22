@@ -1,0 +1,65 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 20px;
+}
+
+.container img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+}
+
+.button-hide {
+    filter: brightness(0);
+    background-color: black;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.button-hide img {
+    width: 50px;
+    height: 50px;
+}
+
+.test {
+    width: 50px;
+    height: auto;
+}
+
+.img-show {
+    display: block;
+    filter: none;
+    background: none;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+
+#restartButton{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}

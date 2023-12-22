@@ -1,7 +1,5 @@
 const brawlers = Array.from({length: 76}, (_, index) => index + 1);
 
-
-console.log(brawlers);
 const getBrawlerPath = function (brawler) {
     return `img/img${brawler}.png`;
 }

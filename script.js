@@ -1,4 +1,4 @@
-const brawlers = Array.from({ length: 76 }, (_, index) => index + 1);
+const brawlers = Array.from({length: 76}, (_, index) => index + 1);
 
 
 console.log(brawlers);
@@ -33,7 +33,7 @@ function click(tileImage) {
     if (tileImage.classList.contains('button-hide') && count <= 1) {
         tileImage.classList.remove('button-hide')
         tileImage.classList.add('test')
-        count ++
+        count++
     } else {
         let check = document.querySelectorAll('img')
         check.forEach(check => check.classList.add('button-hide'))
@@ -43,7 +43,7 @@ function click(tileImage) {
     let images = document.querySelectorAll('.test');
     let sources = [];
     let imgs = []
-    images.forEach(function(image) {
+    images.forEach(function (image) {
         sources.push(image.src);
         imgs.push(image)
 
@@ -51,17 +51,17 @@ function click(tileImage) {
     for (let i = 0; i < sources.length; i++) {
         if (i === 1) {
             if (sources[0] === sources[1]) {
-                imgs.forEach(function (img){
+                imgs.forEach(function (img) {
                     img.classList.add('img-show')
                     checkAllImagesRevealed();
                 });
             } else {
-                counter ++
+                counter++
             }
         }
     }
     let tries = document.getElementById('counter')
-    tries.innerText='Versuche: ' + counter
+    tries.innerText = 'Versuche: ' + counter
 
 
     function checkAllImagesRevealed() {

@@ -1,4 +1,4 @@
-const brawlers = Array.from({length: 76}, (_, index) => index + 1);
+const brawlers = Array.from({length: 78}, (_, index) => index + 1);
 
 const getBrawlerPath = function (brawler) {
     return `img/img${brawler}.png`;
